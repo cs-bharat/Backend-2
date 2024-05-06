@@ -2,6 +2,7 @@ const express = require("express");
 let app = express();
 
 let port = 8080;
+// express listen kar raha he or res ka wait //
 app.listen(port , ()=>{
     console.log(`app is listening on port ${port}`);
 })
