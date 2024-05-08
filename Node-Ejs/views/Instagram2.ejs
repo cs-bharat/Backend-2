@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram2 Template</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div class="head-section ">
+        <h1>Hello Insta Users</h1>
+        <h2><span style="color: blue;">This</span>
+            <span style="color: rgb(251, 38, 233);">page</span>
+            <span style="color: red;">belong </span>
+            <span style="color: yellow;">to</span> @<%= data.name %>
+        </h2>
+
+        <button class="head-button">Follower</button>
+        <button class="head-button msg">Message</button>
+    </div>
+
+    <div class="user-fri">
+        <p>Followers : <%= data.followers %>&nbsp;&nbsp;&nbsp;&nbsp;
+                Following : <%= data.following %>
+        </P>
+    </div>
+    <hr />
+
+    <div class="hero-section">
+        <!-- loops in ejs -->
+        <% for(let post of data.posts){ %>
+            <img src="<%= post.image %>" alt="some img" />
+
+            <div class="user-react">
+                <p>Likes : <%= post.likes %>
+                </p>
+                <p> Comments : <%= post.comments %>
+                </p>
+            </div>
+
+            <% } %>
+    </div>
+</body>
+<style src="/app.js"></style>
+
+</html>

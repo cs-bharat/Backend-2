@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Template</title>
+</head>
+<body>
+    <h1>This page belong to @<%= user %></h1>
+    <button>Follower</button>
+    <button>Message</button>
+
+    <!-- loops in ejs -->
+    <h3>Account that follow you :</h3>
+    <ul>
+        <% for(let folloName of followers){ %>
+            <li><%= folloName %></li>
+        <% } %>  
+    </ul>
+     
+</body>
+</html>
+
+

@@ -1,0 +1,67 @@
+body{
+    background-color: rgb(101, 84, 101);
+}
+
+
+.head-section{
+    text-align: center;
+    color: #fff;
+}
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 2.5rem;
+    
+}
+
+.head-button{
+    font-size: 1.5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: transparent;
+    opacity: none;
+    border-style: none;
+    border: 1px solid yellow;
+}
+.msg{
+   background-color: rgb(255, 0, 183);
+   color: rgb(255, 255, 255);
+}
+
+.user-fri{
+    text-align: center;
+    font-size: 2rem;
+}
+.user-react{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 65vh;
+    /* border: 2px solid black; */
+    font-size: 1.5rem;
+    color: #fff;
+
+}
+
+img{
+    height: 500px;
+    width: 500px;
+    border-radius: 2rem;
+}
+
+img:hover{
+    transform:rotate(15deg);
+    transition-duration: 1s;
+    background-color: blue;
+    height: 500px;
+    width: 500px;
+}
+
+.hero-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

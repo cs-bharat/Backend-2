@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roll dice </title>
+</head>
+<body>
+    <!-- Dice ka data database se aayga to ham ejs me vo data nhi likh sakte he  -->
+    <h1>Dice gives value:<%= data %></h1>
+
+    <!-- conditional ejs used => then <% %> this tag used -->
+    <% if(data == 6) { %>
+        <h2>Nice! roll dice again!</h2>
+    <% } %>
+</body>
+</html>
