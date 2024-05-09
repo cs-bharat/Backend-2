@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get and Post request</title>
+</head>
+<body>
+    <!-- Get request me form data filed karne ke bad submit karne per all data url me so hoga
+         jo safe nhi he or etna long url browser allow nhi karta he (thats limitaion and drobag)  -->
+    <h1>Get request Form</h1>
+    <form method="get" action="http://localhost:8080/register">
+     <input placeholder="Enter your name" type="text" name="username"/>
+     <input placeholder="Enter your password" type="password" name="password"/>
+     <button>Submit</button>
+    </form>
+    <hr/>
+
+    <!-- Es liye ham post request used karte he  -->
+    <!-- post request are send any types of data. (string,json,any other) -->
+    <h1>Post request Form</h1>
+    <form method="post" action="http://localhost:8080/register">
+     <input placeholder="Enter your name" type="text" name="username"/>
+     <input placeholder="Enter your password" type="password" name="password"/>
+     <button>Submit</button>
+    </form>
+
+</body>
+</html>
