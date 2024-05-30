@@ -1,0 +1,68 @@
+body{
+    margin-left: 20px;
+    background-color: rgb(23, 97, 193);
+}
+
+.heading{
+    text-align: center;
+    color: rgb(185, 185, 185);
+    font-size: 30px;
+    font : bold
+}
+.whst{
+    color: rgb(70, 203, 195);
+}
+
+.btn-new{
+    padding: 15px;
+    border-radius: 12px;
+    background-color: blue;
+    margin: 10px;
+    color:white;
+    border: 2px solid yellow;
+    cursor: pointer;
+}
+.edit-btn{
+    padding: 10px;
+    width: 80px;
+    position: relative;
+    top: 10px;
+    border-radius: 12px;
+    background-color: blue;
+    margin: 10px;
+    color:white;
+    border: 2px solid yellow;
+
+    cursor: pointer;
+}
+.edit-btn:hover{
+    background-color: rgb(22, 61, 98);
+}
+.delete-btn{
+    padding: 15px;
+    border-radius: 12px;
+    background-color: rgb(20, 181, 221);
+    width: 120px;
+    margin: 10px;
+    color:white;
+    border: 2px solid yellow;
+    cursor: pointer;
+}
+.send-reci{
+          font-weight: 800;
+          font-size: 20px;
+          padding-left: 10px;
+        }
+.chat{
+    background-color: aliceblue;
+    padding: 17px;
+    border-radius: 18px;
+    margin-bottom: 10px;
+}
+
+.msg{
+    background-color: dodgerblue;
+    color: white;
+    border-radius: 16px;
+    padding: 18px;
+}

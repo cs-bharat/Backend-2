@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini - whatsapp</title>
+    <link rel="stylesheet" , href="style.css">
+</head>
+<body>
+     <h1 class="heading">Mini <span class="whst">whatsapp </span>All chats. </h1>
+     <form method="GET" action="/Chats/new"> 
+        <button class="btn-new">Create new</button>
+     </form>
+     <%  for(let chat of chats){  %>
+        <div class="chat">
+            <p class="send-reci">From : <%= chat.from %></p>
+            <div class="msg">
+                <p><%= chat.msg %></p>
+                <form method="GET" action="/Chats/<%= chat._id%>/edit">
+                    <button class="edit-btn">Edit</button>
+                </form>
+            </div>
+            <form method="POST" action="/Chats/<%= chat._id%>?_method=DELETE">
+                <button class="delete-btn">Delete</button>
+            </form>
+            <p class="send-reci">Recieved by: <%= chat.to %></p>
+            <hr/>
+        </div>
+   <% } %>
+
+</body>
+</html>
+

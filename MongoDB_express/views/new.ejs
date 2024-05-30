@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Chat route page</title>
+    <style>
+        body {
+            background-color: rgb(102, 141, 44);
+        }
+
+        .head {
+            text-align: center;
+            font-size: 45px;
+        }
+
+        .form {
+            text-align: center;
+            height: 400px;
+        }
+
+        .input {
+            font-size: 40px;
+            border-radius: 5px;
+            border: 1px solid grey;
+            padding: 5px;
+        }
+
+        .msg {
+            height: 200px;
+            width: 480px;
+        }
+
+        .btn {
+            padding: 15px;
+            border-radius: 12px;
+            background-color: blue;
+            margin: 10px;
+            color: white;
+            border: 2px solid yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="head">Write a new Chat.</h1>
+    <form class="form" method="POST" action="/Chats">
+        <input placeholder="who are you?" name="from" type="text" class="input" /><br /><br />
+        <textarea name="msg" type="text" placeholder="write your message here."
+            class="input msg"></textarea><br /><br />
+        <input type="text" name="to" placeholder="add Reciever" class="input"><br /><br />
+        <button class="btn">Add chat </button>
+    </form>
+</body>
+
+</html>

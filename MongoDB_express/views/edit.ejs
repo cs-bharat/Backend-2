@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit route page</title>
+    <style>
+  .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rebeccapurple;
+    flex-wrap: wrap;
+    background-color: darkkhaki;
+  }
+   
+  .container p{
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .container form textarea{
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid yellow;
+    border-radius: 9px;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+  }
+  .container button{
+    padding: 15px;
+    border-radius: 10px;
+    background-color: rgb(187, 225, 99);
+    margin: 10px;
+    border: 2px solid rgb(149, 149, 92);
+    cursor: pointer;
+    width: 90px;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+  }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <p>Edit your chat : <%= chat._id %></p>
+    <p>This chat sent from <%= chat.from %> to <%= chat.to %></p>
+
+    <form method="POST" action="/Chats/<%= chat._id %>?_method=PUT"> 
+        <textarea rows="10" cols="30" name="msg"><%= chat.msg %></textarea>
+        <br/>
+        <!-- edit per click karte hi hame edit msg ko database me add karna he 
+           jo ki (put) request se posibble he to or form ke under (Get or Post request hi likh sakte he
+            or put or patch use karne ke liye package npm per (npm i method-override) install karo) -->
+        <button >Edit</button>
+    </form>
+</div>
+</body>
+</html>
