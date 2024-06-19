@@ -24,6 +24,6 @@ const chatSchema = new mongoose.Schema({
 
 })
 
-// create model collection on DB //
+// create model (collection)  => chat automatic database me = (chats hoga small case ) on DB //
 const Chat = mongoose.model("Chat" , chatSchema);
 module.exports = Chat;

@@ -50,7 +50,9 @@
     <p>This chat sent from <%= chat.from %> to <%= chat.to %></p>
 
     <form method="POST" action="/Chats/<%= chat._id %>?_method=PUT"> 
-        <textarea rows="10" cols="30" name="msg"><%= chat.msg %></textarea>
+        <textarea rows="10" cols="30" name="msg">
+          <%= chat.msg %>
+        </textarea>
         <br/>
         <!-- edit per click karte hi hame edit msg ko database me add karna he 
            jo ki (put) request se posibble he to or form ke under (Get or Post request hi likh sakte he
